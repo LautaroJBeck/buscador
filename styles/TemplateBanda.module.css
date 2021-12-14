@@ -1,0 +1,120 @@
+.banda_container{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    top:0;
+    left:0;
+}
+.info_container{
+    background-color: #fff;
+    width:90%;
+    display: flex;
+    margin:50px 0;
+    padding:25px;
+    position: relative;
+
+}
+.img_container{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding:15px;
+}
+.img_container img{
+    width:425px;
+    height:425px;
+}
+.img_container span{
+    color:#2F3E46 ;
+    padding: 5px;
+    font-size: 18px;
+} 
+.text_container{
+    padding:15px;
+
+}
+.text_container h4{
+    font-size: 25px;
+    color:#2F3E46 ;
+}
+.text_container p{
+    font-size: 15px;
+    color:#2F3E46;
+}
+.img_container .button_agregar{
+    border:none;
+    outline: none;
+    background-color:#52796F;
+    color:#fff;
+    height:50px;
+    cursor:pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.img_container .button_remover{
+    
+    outline: none;
+    border:3px solid #52796F;
+    color:#52796F;
+    background-color: #fff;
+    height:50px;
+    cursor:pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.button_cerrar{
+    position: absolute;
+    height:30px;
+    width: 30px;
+    top:15px;
+    right:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color:#fff;
+    color:#52796F;
+    cursor:pointer
+}
+.banda_container .button_cerrar i{
+    font-size: 30px;
+}
+@media only screen and (max-width: 1024px){
+    .text_container p{
+        display:none;
+    }
+    .info_container{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .text_container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:480px){
+    .img_container img{
+        width:300px;
+        height:300px;
+    }
+    .img_container span{
+        align-self:flex-start;
+    }
+    .img_container .button_agregar{
+        font-size: 16px;
+    }
+    .img_container .button_remover{
+        font-size: 16px;
+    }
+}

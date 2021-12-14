@@ -1,0 +1,10 @@
+.mensaje_error_container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje_error_container span{
+    font-size: 20px;
+    color:#fff;
+}

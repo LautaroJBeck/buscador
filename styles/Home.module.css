@@ -1,116 +1,71 @@
-.container {
-  padding: 0 2rem;
+.header_container{
+    width:100%;
 }
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header_container div{
+    width:90%;
+    margin:0 auto;
+    margin-top: 3.5rem;
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.header_container h4{
+    color:#fff;
+    font-size: 28px;
 }
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.search_container{
+    display:flex;
+    width:100%;
+    margin-top: 10px;
 }
+.search_container input{
+    height:30px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding:5px;
+    font-size: 18px;
+    outline:none;
+    border:none;
+    border:1px solid #52796F;
+    border-left: 3px solid #52796F;
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.search_container button{
+    width:100px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-left: 15px;
+    background-color: #52796F;
+    outline: none;
+    border:none;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor:pointer;
+    transition: .5s;
 }
+.search_container button:hover{
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+    background-color:#4a665f;
 }
-
-.title,
-.description {
-  text-align: center;
+.main_container{
+    width:100%;
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.favoritas_titles_container{
+    width:90%;
+    margin:0 auto;
+    margin-top: 2rem;
+    color:#fff;
+    font-size: 28px;
 }
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+.favoritas_templates_container{
     width: 100%;
-    flex-direction: column;
-  }
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:420px){
+    .search_container input{
+        font-size: 16px;
+    }.search_container button{
+        font-size: 16px;
+        width: 75px;
+    }
 }
